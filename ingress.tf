@@ -1,8 +1,8 @@
 
 
 module "nginx-controller" {
-  source  = "terraform-iaac/nginx-controller/helm"
-  version = "2.0.2"
+  source             = "terraform-iaac/nginx-controller/helm"
+  version            = "2.0.2"
   ingress_class_name = "ingress-public"
   additional_set = [
     {
