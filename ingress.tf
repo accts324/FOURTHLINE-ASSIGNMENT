@@ -1,6 +1,9 @@
 
 
 module "nginx-controller" {
+  depends_on = [
+    module.eks
+  ]
   source             = "terraform-iaac/nginx-controller/helm"
   version            = "2.0.2"
   ingress_class_name = "ingress-public"
