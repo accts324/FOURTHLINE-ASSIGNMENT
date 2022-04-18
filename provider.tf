@@ -21,7 +21,7 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "eu-west-1"
+  region     = "eu-west-1"
   access_key = "AKIA2Z7GJK2ICCOKPCMI"
   secret_key = "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"
 }
@@ -58,5 +58,5 @@ provider "kubectl" {
     args        = ["eks", "get-token", "--cluster-name", "fourthline-assignment"]
     command     = "aws"
   }
-  load_config_file       = false
+  load_config_file = false
 }
