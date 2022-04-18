@@ -1,5 +1,5 @@
 
-/*
+
 module "nginx-controller" {
   source  = "terraform-iaac/nginx-controller/helm"
   version = "2.0.2"
@@ -13,9 +13,9 @@ module "nginx-controller" {
   ]
 }
 
-*/
 
 
+/*
 resource "helm_release" "nginx" {
   name             = var.helm_release_name
   namespace        = var.kubernetes_namespace
@@ -48,3 +48,5 @@ resource "helm_release" "nginx" {
     yamlencode(local.ingress)
   ]
 }
+
+*/
